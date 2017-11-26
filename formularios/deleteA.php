@@ -17,7 +17,7 @@ if(isset($_POST['cod'])){
         mysqli_stmt_bind_param($sentencia, "s",$cod);
         mysqli_stmt_execute($sentencia);
         mysqli_stmt_close($sentencia);
-        echo "<script>alert('Artículo eliminado exitosamente. Presione <Mostrar todos> para visualizsr los cambios.')</script>";
+        echo "<script>alert('Artículo eliminado exitosamente. Presione <Mostrar todos> para visualizar los cambios.')</script>";
     }
 }
 

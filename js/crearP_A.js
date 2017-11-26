@@ -6,6 +6,10 @@ $(document).ready(function() {
             data: {cod: $('#cod').val(), precio: $('#precio').val(), direccion: $('#direccion').val(), estatus: $('#estatus').val(), transporte: $('#transporte').val(), id_cliente: $('#id_cliente').val()},
             beforeSend: function () {
                 console.log('Desde la consola');
+                var res = confirm('¿Está seguro(a) de crear este nuevo pedido? Recuerde que debe rellenar todos los campos.');
+                if(!res){
+                    $.ajax().cancel();
+                }
             }
         })
             .done(function (output) {

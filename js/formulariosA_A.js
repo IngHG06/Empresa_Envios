@@ -27,7 +27,10 @@ $(document).ready(function() {
             data: {cod: $('#cod').val()},
             beforeSend: function () {
                 console.log('Desde la consola');
-                alert('¿Está seguro(a) de querer modificar el artículo: '+$('#cod').val()+'?');
+                var res = confirm('¿Está seguro(a) de querer modificar el artículo: '+$('#cod').val()+'?');
+                if(!res){
+                    $.ajax().cancel();
+                }
             }
         })
             .done(function (output) {
@@ -49,7 +52,10 @@ $(document).ready(function() {
             data: {cod: $('#cod').val()},
             beforeSend: function () {
                 console.log('Desde la consola');
-                alert('¿Está seguro(a) de querer eliminar el artículo: '+$('#cod').val()+'?');
+                var res = confirm('¿Está seguro(a) de querer eliminar el artículo: '+$('#cod').val()+'?');
+                if(!res){
+                    $.ajax().cancel();
+                }
             }
         })
             .done(function (output) {

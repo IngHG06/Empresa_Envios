@@ -6,6 +6,10 @@ $(document).ready(function() {
             data: {cod: $('#cod').val(), precio: $('#precio').val(), dir: $('#dir').val(), estatus: $('#estatus').val(), cod_trans: $('#cod_trans').val(), id_cliente: $('#id_cliente').val()},
             beforeSend: function () {
                 console.log('Desde la consola');
+                var res = confirm('¿Está conforme con las modificaciones realizadas? Recuerde que debe rellenar todos los campos.');
+                if(!res){
+                    $.ajax().cancel();
+                }
             }
         })
             .done(function (output) {

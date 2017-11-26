@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1584403-0f71-4968-b3dd-d23844ff09be" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/formularios/crearU.php" afterPath="$PROJECT_DIR$/formularios/crearU.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/formularios/deleteA.php" afterPath="$PROJECT_DIR$/formularios/deleteA.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/formularios/deleteP.php" afterPath="$PROJECT_DIR$/formularios/deleteP.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/crearA_A.js" afterPath="$PROJECT_DIR$/js/crearA_A.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/crearP_A.js" afterPath="$PROJECT_DIR$/js/crearP_A.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/formulariosA_A.js" afterPath="$PROJECT_DIR$/js/formulariosA_A.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/formulariosP_A.js" afterPath="$PROJECT_DIR$/js/formulariosP_A.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/modificarA_A.js" afterPath="$PROJECT_DIR$/js/modificarA_A.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/modificarP_A.js" afterPath="$PROJECT_DIR$/js/modificarP_A.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/mostrarA_A.js" afterPath="$PROJECT_DIR$/js/mostrarA_A.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/mostrarA_C.js" afterPath="$PROJECT_DIR$/js/mostrarA_C.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/mostrarP_A.js" afterPath="$PROJECT_DIR$/js/mostrarP_A.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/mostrarP_C.js" afterPath="$PROJECT_DIR$/js/mostrarP_C.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,35 +44,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="crearU.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/formularios/crearU.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="45" column="42" lean-forward="true" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
-              <folding>
-                <marker date="1511714241749" expanded="true" signature="1190:1234" ph="SELECT COUNT... usuarios" />
-                <marker date="1511714241749" expanded="true" signature="2210:2306" ph="INSERT INTO usuarios... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="crearA_A.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/verificaciones/crearA_A.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="15" column="63" lean-forward="true" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="63" />
-              <folding>
-                <marker date="1511673468814" expanded="true" signature="477:513" ph="SELECT COUNT... articulos" />
-                <marker date="1511673468814" expanded="true" signature="477:530" ph="SELECT COUNT... articulos" />
-                <marker date="1511673468814" expanded="true" signature="1012:1102" ph="INSERT INTO articulos... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -87,13 +69,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js/mostrarAI_A.js" />
         <option value="$PROJECT_DIR$/verificaciones/mostrarAI_A.php" />
         <option value="$PROJECT_DIR$/js/devolverA_A.js" />
         <option value="$PROJECT_DIR$/js/devolverAI_A.js" />
         <option value="$PROJECT_DIR$/cliente/articulos.php" />
         <option value="$PROJECT_DIR$/js/mostrarAI_C.js" />
-        <option value="$PROJECT_DIR$/js/mostrarA_C.js" />
         <option value="$PROJECT_DIR$/verificaciones/mostrarAI_C.php" />
         <option value="$PROJECT_DIR$/js/devolverA_C.js" />
         <option value="$PROJECT_DIR$/js/devolverAI_C.js" />
@@ -104,7 +84,6 @@
         <option value="$PROJECT_DIR$/js/devolverP_C.js" />
         <option value="$PROJECT_DIR$/js/devolverPI_C.js" />
         <option value="$PROJECT_DIR$/verificaciones/mostrarP_C.php" />
-        <option value="$PROJECT_DIR$/js/mostrarP_C.js" />
         <option value="$PROJECT_DIR$/LEAME.txt" />
         <option value="$PROJECT_DIR$/formularios/ingresarT.php" />
         <option value="$PROJECT_DIR$/formularios/ingresarU.php" />
@@ -116,28 +95,31 @@
         <option value="$PROJECT_DIR$/css/opciones-style.css" />
         <option value="$PROJECT_DIR$/admin/articulosA.php" />
         <option value="$PROJECT_DIR$/formularios/ingresarA.php" />
-        <option value="$PROJECT_DIR$/js/crearA_A.js" />
         <option value="$PROJECT_DIR$/verificaciones/modificarA_A.js" />
         <option value="$PROJECT_DIR$/js/formularioIA_A.js" />
-        <option value="$PROJECT_DIR$/js/modificarA_A.js" />
-        <option value="$PROJECT_DIR$/js/formulariosA_A.js" />
-        <option value="$PROJECT_DIR$/js/mostrarA_A.js" />
         <option value="$PROJECT_DIR$/verificaciones/mostrarA_A.php" />
         <option value="$PROJECT_DIR$/formularios/ingresarP.php" />
-        <option value="$PROJECT_DIR$/js/crearP_A.js" />
         <option value="$PROJECT_DIR$/verificaciones/crearP_A.php" />
         <option value="$PROJECT_DIR$/verificaciones/crearA_A.php" />
         <option value="$PROJECT_DIR$/verificaciones/mostrarP_A.php" />
         <option value="$PROJECT_DIR$/admin/pedidosA.php" />
         <option value="$PROJECT_DIR$/formularios/modificarA.php" />
-        <option value="$PROJECT_DIR$/js/formulariosP_A.js" />
         <option value="$PROJECT_DIR$/formularios/modificarP.php" />
-        <option value="$PROJECT_DIR$/js/modificarP_A.js" />
         <option value="$PROJECT_DIR$/verificaciones/modificarP_A.php" />
         <option value="$PROJECT_DIR$/verificaciones/modificarA_A.php" />
-        <option value="$PROJECT_DIR$/formularios/deleteP.php" />
-        <option value="$PROJECT_DIR$/formularios/deleteA.php" />
         <option value="$PROJECT_DIR$/formularios/crearU.php" />
+        <option value="$PROJECT_DIR$/js/mostrarA_C.js" />
+        <option value="$PROJECT_DIR$/js/mostrarP_C.js" />
+        <option value="$PROJECT_DIR$/js/mostrarA_A.js" />
+        <option value="$PROJECT_DIR$/js/mostrarP_A.js" />
+        <option value="$PROJECT_DIR$/js/formulariosA_A.js" />
+        <option value="$PROJECT_DIR$/js/modificarA_A.js" />
+        <option value="$PROJECT_DIR$/js/modificarP_A.js" />
+        <option value="$PROJECT_DIR$/js/formulariosP_A.js" />
+        <option value="$PROJECT_DIR$/js/crearP_A.js" />
+        <option value="$PROJECT_DIR$/js/crearA_A.js" />
+        <option value="$PROJECT_DIR$/formularios/deleteA.php" />
+        <option value="$PROJECT_DIR$/formularios/deleteP.php" />
       </list>
     </option>
   </component>
@@ -185,7 +167,7 @@
             <path>
               <item name="emp_envios" type="b2602c69:ProjectViewProjectNode" />
               <item name="emp_envios" type="462c0819:PsiDirectoryNode" />
-              <item name="verificaciones" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -328,16 +310,15 @@
       <workItem from="1511017497435" duration="1436000" />
       <workItem from="1511546420450" duration="14300000" />
       <workItem from="1511623495711" duration="34696000" />
-      <workItem from="1511713139834" duration="1640000" />
+      <workItem from="1511713139834" duration="3146000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52072000" />
+    <option name="totallyTimeSpent" value="53578000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -351,7 +332,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1633888" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1633888" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13086233" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -416,25 +397,6 @@
     <entry file="file://$PROJECT_DIR$/verificaciones/mostrarAI_C.php" />
     <entry file="file://$PROJECT_DIR$/js/devolverA_C.js" />
     <entry file="file://$PROJECT_DIR$/js/devolverAI_C.js" />
-    <entry file="file://$PROJECT_DIR$/verificaciones/mostrarA_C.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding>
-            <marker date="1511673468908" expanded="true" signature="205:400" ph="SELECT cod_a... articulos" />
-            <marker date="1511673468908" expanded="true" signature="348:399" ph="SELECT cod_p... pedidos" />
-            <marker date="1511673468908" expanded="true" signature="1155:1252" ph="SELECT cod_a... articulos" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/mostrarA_C.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="44" lean-forward="false" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cliente/articulos.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
@@ -446,13 +408,6 @@
     <entry file="file://$PROJECT_DIR$/verificaciones/mostrarPI_C.php" />
     <entry file="file://$PROJECT_DIR$/js/devolverP_C.js" />
     <entry file="file://$PROJECT_DIR$/js/devolverPI_C.js" />
-    <entry file="file://$PROJECT_DIR$/js/mostrarP_C.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="4" lean-forward="true" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cliente/pedidos.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -530,20 +485,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/mostrarA_A.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/formulariosA_A.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="65" column="2" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="65" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/formularios/ingresarP.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -562,13 +503,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/crearA_A.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/verificaciones/mostrarP_C.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1513">
@@ -580,24 +514,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/mostrarP_A.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/articulosA.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="530">
           <caret line="65" column="61" lean-forward="false" selection-start-line="65" selection-start-column="61" selection-end-line="65" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/modificarA_A.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -618,13 +538,6 @@
             <marker date="1511673468893" expanded="true" signature="1030:1127" ph="SELECT cod_a... articulos" />
             <marker date="1511673468893" expanded="true" signature="2338:2363" ph="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/modificarP_A.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="46" lean-forward="false" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -666,38 +579,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/formularios/deleteA.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="81" lean-forward="false" selection-start-line="19" selection-start-column="81" selection-end-line="19" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/pedidosA.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="44" column="51" lean-forward="false" selection-start-line="44" selection-start-column="51" selection-end-line="44" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/formularios/deleteP.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="83" lean-forward="false" selection-start-line="19" selection-start-column="83" selection-end-line="19" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/crearP_A.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="2" lean-forward="true" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/formulariosP_A.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="51" column="67" lean-forward="false" selection-start-line="51" selection-start-column="67" selection-end-line="51" selection-end-column="67" />
         </state>
       </provider>
     </entry>
@@ -706,6 +591,17 @@
         <state relative-caret-position="517">
           <caret line="49" column="49" lean-forward="true" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="49" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/formularios/crearU.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="45" column="42" lean-forward="true" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
+          <folding>
+            <marker date="1511714241749" expanded="true" signature="1190:1234" ph="SELECT COUNT... usuarios" />
+            <marker date="1511714241749" expanded="true" signature="2210:2306" ph="INSERT INTO usuarios... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -721,13 +617,115 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/formularios/crearU.php">
+    <entry file="file://$PROJECT_DIR$/js/mostrarP_A.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="45" column="42" lean-forward="true" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
+        <state relative-caret-position="417">
+          <caret line="34" column="16" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="36" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/mostrarA_A.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="37" column="17" lean-forward="false" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/mostrarP_C.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/mostrarA_C.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="36" column="17" lean-forward="false" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verificaciones/mostrarA_C.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1241">
+          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
           <folding>
-            <marker date="1511714241749" expanded="true" signature="1190:1234" ph="SELECT COUNT... usuarios" />
-            <marker date="1511714241749" expanded="true" signature="2210:2306" ph="INSERT INTO usuarios... " />
+            <marker date="1511673468908" expanded="true" signature="205:400" ph="SELECT cod_a... articulos" />
+            <marker date="1511673468908" expanded="true" signature="348:399" ph="SELECT cod_p... pedidos" />
+            <marker date="1511673468908" expanded="true" signature="1155:1252" ph="SELECT cod_a... articulos" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/modificarP_A.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/modificarA_A.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="17" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="11" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/formulariosP_A.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="54" column="79" lean-forward="false" selection-start-line="54" selection-start-column="79" selection-end-line="54" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/formulariosA_A.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="54" column="16" lean-forward="false" selection-start-line="54" selection-start-column="16" selection-end-line="57" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/crearA_A.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="125" lean-forward="false" selection-start-line="8" selection-start-column="125" selection-end-line="8" selection-end-column="125" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/crearP_A.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="123" lean-forward="false" selection-start-line="8" selection-start-column="123" selection-end-line="8" selection-end-column="123" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/formularios/deleteP.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="103" lean-forward="false" selection-start-line="19" selection-start-column="103" selection-end-line="19" selection-end-column="103" />
+          <folding>
+            <marker date="1511718166028" expanded="true" signature="244:284" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/formularios/deleteA.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="101" lean-forward="false" selection-start-line="19" selection-start-column="101" selection-end-line="19" selection-end-column="101" />
+          <folding>
+            <element signature="e#6#139#0#PHP" expanded="true" />
+            <marker date="1511718159230" expanded="true" signature="250:294" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>

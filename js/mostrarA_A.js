@@ -6,7 +6,10 @@ $(document).ready(function(){
             data: {all: $('#all').val()},
             beforeSend: function(){
                 console.log('Desde la consola');
-                alert('¿Está seguro(a) de realizar esta consulta?');
+                var res = confirm('Está seguro(a) de realizar esta consulta?');
+                if(!res){
+                    $.ajax().cancel();
+                }
                 $('#table').show();
             }
         })
@@ -29,7 +32,10 @@ $(document).ready(function(){
             data: {code: $('#code').val()},
             beforeSend: function(){
                 console.log('Desde la consola');
-                alert('Está seguro(a) de realizar esta consulta?');
+                var res = confirm('Está seguro(a) de realizar esta consulta?');
+                if(!res){
+                    $.ajax().cancel();
+                }
                 $('#table').show();
             }
         })
