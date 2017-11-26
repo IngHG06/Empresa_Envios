@@ -1,0 +1,66 @@
+/*
+	MATERIA: Programación IV
+	NOMBRE PROYECTO: Sistema de Gestión de Envíos.
+	DESARROLLADO POR: Hiram González V-26164832
+*/
+@charset "utf-8";
+
+section{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.div1{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 2%;
+}
+
+.div2{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 2%;
+}
+
+#div2_cliente{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+figure{
+	width: 40%;
+	height: 38vh;
+	background-color: rgba(0,108,255,.6);
+	border: 3px solid #ee4000;
+    border-radius: 10px;
+    box-shadow: #696969 5px 5px 10px;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+figure:hover{
+	-moz-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	cursor: pointer;
+}
+
+figure img{
+	width: 37%;
+	height: 25vh;
+}
+
+figure figcaption{
+	font: bold 2em 'Play', sans-serif;
+	color: #5e5e5e;
+}

@@ -1,0 +1,62 @@
+/*
+	MATERIA: Programación IV
+	NOMBRE PROYECTO: Sistema de Gestión de Envíos.
+	DESARROLLADO POR: Hiram González V-26164832
+*/
+@charset "utf-8";
+
+table{
+	margin-top: 2%;
+	margin-bottom: 5%;
+}
+
+.opciones{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.info{
+	text-align: center;
+}
+
+.warning{
+	text-align: center;
+}
+
+.danger{
+	text-align: center;
+}
+
+.nav1{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.ingresar{
+	margin-right: 5%;
+}
+
+@media screen and (max-width: 900px){
+	.table-responsive{
+		margin-top: 5%;
+	}
+
+	table{
+		margin-top: 0px;
+	}
+
+	.opciones{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	form{
+		margin: 5px auto;
+	}
+}

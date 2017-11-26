@@ -1,0 +1,89 @@
+/*
+	MATERIA: Programación IV
+	NOMBRE PROYECTO: Sistema de Gestión de Envíos.
+	DESARROLLADO POR: Hiram González V-26164832
+*/
+@charset "utf-8";
+
+body{
+	background-color: ##F1F0F0;
+	font-family: 'Play', sans-serif;
+}
+
+.header{
+	width: 99%;
+	height: 30vh;
+	margin: 10px auto;
+}
+
+.banner{
+	width: 100%;
+	height: 30vh;
+}
+
+section{
+	width: 90%;
+	height: 59.5vh;
+	margin-top: 5px;
+	margin-bottom: 5vh;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: rgba(242,242,242,.95);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.titulo{
+	text-align: center;
+	color: #696969;
+	font: bold 2.5em 'Play', sans-serif;
+	font-family: 'Play', sans-serif;
+	padding-top: 15px;
+}
+
+#envoltura{
+	margin: 7vh auto;
+	width: 25%;
+	height: 30vh;
+	background-color:rgba(242,242,242,.8);
+    border: 3px solid rgba(0,30,255,.75);
+    border-radius: 10px;
+    box-shadow: #696969 10px 10px 15px;
+    -moz-transition: -moz-transform 0.3s ease-in-out 0.1s;
+	-webkit-transition: -webkit-transform 0.3s ease-in-out 0.1s;
+	-ms-transition: -ms-transform 0.3s ease-in-out 0.1s;
+	-o-transition: -o-transform 0.3s ease-in-out 0.1s;
+}
+
+#envoltura:hover{
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+}
+
+#cuerpo{
+    padding:15px 35px;
+    border-radius: 10px;
+}
+
+.crear{
+	margin-left: 50%;
+}
+
+.footer{
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #696969;
+	
+}
+
+.footer p{
+	color: #FFFFFF;
+	font: normal 1.1em 'Play', sans-serif;
+}
