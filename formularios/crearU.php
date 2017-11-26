@@ -25,28 +25,44 @@
 			if(isset($_POST['nom_ape'])&&isset($_POST['user'])&&isset($_POST['pass'])&&isset($_POST['ver_pass'])&&isset($_POST['direccion'])){
 				if($_POST['nom_ape']!=""&&$_POST['user']!=""&&$_POST['pass']!=""&&$_POST['ver_pass']!=""&&$_POST['direccion']!=""){
 
-					$nomape = $_POST['nom_ape'];
-					$user = $_POST['user'];
-					if(strcmp($_POST['pass'],$_POST['ver_pass'])==0){
-						$pass = md5($_POST['pass']);
-					}else{
-						echo "<script language='javascript'>alert('Las contraseñas "
-	                		  . "no coinciden. Intente de nuevo.')</script>";
-						header('location: ../login.php');
-					}
-					$tipo = 1;
-					$direccion = $_POST['direccion'];
-					$saldo = "0";
-					$descuento = 0;
+                    $user = $_POST['user'];
 
-					$query = "INSERT INTO usuarios (nom_ape,user,pass,cuenta,direccion,saldo,descuento) VALUES (?,?,?,?,?,?,?)";
+				    $query = "SELECT COUNT(*) FROM usuarios WHERE user = ?";
 
-					if ($sentencia = mysqli_prepare($enlace, $query)) {
-						mysqli_stmt_bind_param($sentencia, "sssissi",$nomape,$user,$pass,$tipo,$direccion,$saldo,$descuento);
-						mysqli_stmt_execute($sentencia);
-			            mysqli_stmt_close($sentencia);
-                        echo "<script>alert('Cuenta creada con éxito.'), window.location.href='../login.php'</script>";
-					}
+                    if ($sentencia = mysqli_prepare($enlace, $query)) {
+                        mysqli_stmt_bind_param($sentencia, "s", $user);
+                        mysqli_stmt_execute($sentencia);
+                        mysqli_stmt_bind_result($sentencia, $existencia);
+                        while (mysqli_stmt_fetch($sentencia)) {
+                            $existencia = $existencia;
+                        }
+                        mysqli_stmt_close($sentencia);
+
+                        if ($existencia == 0) {
+
+                            $nomape = $_POST['nom_ape'];
+                            if (strcmp($_POST['pass'], $_POST['ver_pass']) == 0) {
+                                $pass = md5($_POST['pass']);
+                                $tipo = 1;
+                                $direccion = $_POST['direccion'];
+                                $saldo = "0";
+                                $descuento = 0;
+
+                                $query = "INSERT INTO usuarios (nom_ape,user,pass,cuenta,direccion,saldo,descuento) VALUES (?,?,?,?,?,?,?)";
+
+                                if ($sentencia = mysqli_prepare($enlace, $query)) {
+                                    mysqli_stmt_bind_param($sentencia, "sssissi", $nomape, $user, $pass, $tipo, $direccion, $saldo, $descuento);
+                                    mysqli_stmt_execute($sentencia);
+                                    mysqli_stmt_close($sentencia);
+                                    echo "<script>alert('Cuenta creada con éxito.'), window.location.href='../login.php'</script>";
+                                }
+                            } else {
+                                echo "<script>alert('Las contraseñas no coinciden. Intente de nuevo.'), window.location.href='#'</script>";
+                            }
+                        } elseif ($existencia > 0) {
+                            echo "<script>alert('Ya existe un registro con el usuario: " . $user . "')</script>";
+                        }
+                    }
 				}else{
                     echo "<script>alert('No se han introducido datos en los campos. Intente de nuevo.')</script>";
 				}
