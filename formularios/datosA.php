@@ -86,10 +86,10 @@
 						mysqli_stmt_bind_param($sentencia, "sssi",$nomape,$user,$direccion,$id);
 						mysqli_stmt_execute($sentencia);
 			            mysqli_stmt_close($sentencia);
-						header('location: ../formularios/datos.php');
+                        echo "<script>alert('Datos actualizados exitosamente.'), window.location.href='../admin/indexA.php'</script>";
 					}
 				}else{
-					header('location: ../formularios/datos.php');
+                    echo "<script>alert('Por favor, rellene los campos de datos solicitados.')</script>";
 				}
 			}
 
@@ -114,17 +114,23 @@
 					if(strcmp($pass_res, $pass_act)==0){
 						if(strcmp($_POST['pass_nueva'],$_POST['ver_pass'])==0){
 							$pass_nueva = md5($_POST['pass_nueva']);
-						}
-						$query = "UPDATE usuarios SET pass = ? WHERE id = ?";
-						$sentencia = mysqli_prepare($enlace, $query);
-						if ($sentencia) {
-							mysqli_stmt_bind_param($sentencia, "si",$pass_nueva,$id);
-							mysqli_stmt_execute($sentencia);
-				            mysqli_stmt_close($sentencia);
-							header('location: ../formularios/datos.php');
-						}
-					}
-				}	
+                            $query = "UPDATE usuarios SET pass = ? WHERE id = ?";
+                            $sentencia = mysqli_prepare($enlace, $query);
+                            if ($sentencia) {
+                                mysqli_stmt_bind_param($sentencia, "si",$pass_nueva,$id);
+                                mysqli_stmt_execute($sentencia);
+                                mysqli_stmt_close($sentencia);
+                                echo "<script>alert('Cambio exitoso de contraseña.'), window.location.href='../admin/indexA.php'</script>";
+                            }
+						}else{
+                            echo "<script>alert('La nueva contraseña no coincide.')</script>";
+                        }
+					}else{
+                        echo "<script>alert('La contraseña actual no coinciden.')</script>";
+                    }
+				}else{
+                    echo "<script>alert('Por favor, rellene todos los campos de contraseña solicitados.')</script>";
+                }
 			}
 
 			require_once('../config/cerrar.php');
@@ -137,8 +143,7 @@
 				<center>
 					<div id="envoltura">      
 		                <div id="cuerpo">
-		                    <form id="form-login" action="datos.php" method="POST" autocomplete="off" role="form" class="form-inline">
-		                    	<!--<input type="text" name="id" value="<?php echo $_SESSION['id']; ?>" hidden="true">-->
+		                    <form id="form-login" action="datosA.php" method="POST" autocomplete="off" role="form" class="form-inline">
 		                    	<div class="form-group op">
 	                    			<input class="form-control" type="text" name="nom_ape" placeholder="Nombre y Apellido">
 	                    			<input class="form-control" type="text" name="user" placeholder="Usuario">
@@ -157,8 +162,7 @@
 	        	<center>
 					<div id="envoltura">      
 		                <div id="cuerpo">
-		                    <form id="form-login" action="datos.php" method="POST" autocomplete="off" role="form" class="form-inline">
-		                    	<!--<input type="text" name="id" value="<?php echo $_SESSION['id']; ?>" hidden="true">-->
+		                    <form id="form-login" action="datosA.php" method="POST" autocomplete="off" role="form" class="form-inline">
 		                    	<div class="form-group op">
 		                    		<input class="form-control" type="password" name="pass_act" placeholder="Contraseña actual">
 	                    			<input class="form-control" type="password" name="pass_nueva" placeholder="Nueva contraseña">

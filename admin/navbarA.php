@@ -14,7 +14,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a href="indexA.php" class="navbar-brand"><img src="../img/favicon.png" alt="Brand">Envíos González</a>
+					<a href="../cliente/indexA.php" class="navbar-brand"><img src="../img/favicon.png" alt="Brand">Envíos González</a>
 				</div>
 				<div class="collapse navbar-collapse navbar-right" id="navbar-1">
 					<ul class="nav navbar-nav navbar_right">

@@ -86,10 +86,10 @@
 						mysqli_stmt_bind_param($sentencia, "sssi",$nomape,$user,$direccion,$id);
 						mysqli_stmt_execute($sentencia);
 			            mysqli_stmt_close($sentencia);
-						header('location: ../formularios/datos.php');
+						echo "<script>alert('Datos actualizados exitosamente.'), window.location.href='../cliente/indexC.php'</script>";
 					}
 				}else{
-					header('location: ../formularios/datos.php');
+                    echo "<script>alert('Por favor, rellene los campos de datos solicitados.')</script>";
 				}
 			}
 
@@ -114,17 +114,23 @@
 					if(strcmp($pass_res, $pass_act)==0){
 						if(strcmp($_POST['pass_nueva'],$_POST['ver_pass'])==0){
 							$pass_nueva = md5($_POST['pass_nueva']);
-						}
-						$query = "UPDATE usuarios SET pass = ? WHERE id = ?";
-						$sentencia = mysqli_prepare($enlace, $query);
-						if ($sentencia) {
-							mysqli_stmt_bind_param($sentencia, "si",$pass_nueva,$id);
-							mysqli_stmt_execute($sentencia);
-				            mysqli_stmt_close($sentencia);
-							header('location: ../formularios/datos.php');
-						}
-					}
-				}	
+                            $query = "UPDATE usuarios SET pass = ? WHERE id = ?";
+                            $sentencia = mysqli_prepare($enlace, $query);
+                            if ($sentencia) {
+                                mysqli_stmt_bind_param($sentencia, "si",$pass_nueva,$id);
+                                mysqli_stmt_execute($sentencia);
+                                mysqli_stmt_close($sentencia);
+                                echo "<script>alert('Cambio exitoso de contraseña.'), window.location.href='../cliente/indexC.php'</script>";
+                            }
+						}else{
+                            echo "<script>alert('La nueva contraseña no coincide.')</script>";
+                        }
+					}else{
+                        echo "<script>alert('La contraseña actual no coinciden.')</script>";
+                    }
+				}else{
+                    echo "<script>alert('Por favor, rellene todos los campos de contraseña solicitados.')</script>";
+                }
 			}
 
 			require_once('../config/cerrar.php');
