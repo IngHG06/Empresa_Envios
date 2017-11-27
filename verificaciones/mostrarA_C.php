@@ -1,4 +1,9 @@
 <?php
+/*
+    MATERIA: Programación IV
+    NOMBRE PROYECTO: Sistema de Gestión de Envíos.
+    DESARROLLADO POR: Hiram González V-26164832
+*/
 
     session_start();
 
