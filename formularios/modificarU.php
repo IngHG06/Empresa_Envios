@@ -90,10 +90,10 @@
 						mysqli_stmt_bind_param($sentencia, "sssissis",$nomape,$user,$pass,$tipo,$direccion,$saldo,$descuento, $id);
 						mysqli_stmt_execute($sentencia);
 			            mysqli_stmt_close($sentencia);
-						header('location: ../admin/usuariosA.php');
+                        echo "<script>alert('Usuario modificado exitosamente.'), window.location.href='../admin/usuariosA.php'</script>";
 					}
 				}else{
-					header('location: ../admin/usuariosA.php');
+                    echo "<script>alert('Por favor, rellene todos los campos'), window.location.href='../formularios/modificarU.php?id=".$_POST['id']."'</script>";
 				}
 			}
 

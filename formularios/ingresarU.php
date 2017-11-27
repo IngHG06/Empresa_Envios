@@ -28,24 +28,45 @@
 			require_once('../config/conexion.php');
 
 			if(isset($_POST['nom_ape'])&&isset($_POST['user'])&&isset($_POST['pass'])&&isset($_POST['tipo'])&&isset($_POST['direccion'])&&isset($_POST['saldo'])&&isset($_POST['descuento'])){
+                if($_POST['nom_ape']!=""&&$_POST['user']!=""&&$_POST['pass']!=""&&$_POST['tipo']!=""&&$_POST['direccion']!=""&&$_POST['saldo']!=""&&$_POST['descuento']!="") {
+                    $nomape = $_POST['nom_ape'];
+                    $user = $_POST['user'];
+                    $pass = md5($_POST['pass']);
+                    $tipo = $_POST['tipo'];
+                    $direccion = $_POST['direccion'];
+                    $saldo = $_POST['saldo'];
+                    $descuento = $_POST['descuento'];
 
-				$nomape = $_POST['nom_ape'];
-				$user = $_POST['user'];
-				$pass = md5($_POST['pass']);
-				$tipo = $_POST['tipo'];
-				$direccion = $_POST['direccion'];
-				$saldo = $_POST['saldo'];
-				$descuento = $_POST['descuento'];
+                    $query = "SELECT COUNT(*) FROM usuarios WHERE user = ?";
 
-				$query = "INSERT INTO usuarios (nom_ape,user,pass,cuenta,direccion,saldo,descuento) VALUES (?,?,?,?,?,?,?)";
+                    if ($sentencia = mysqli_prepare($enlace, $query)) {
+                        mysqli_stmt_bind_param($sentencia, "s", $user);
+                        mysqli_stmt_execute($sentencia);
+                        mysqli_stmt_bind_result($sentencia, $existencia);
+                        while (mysqli_stmt_fetch($sentencia)) {
+                            $existencia = $existencia;
+                        }
+                        mysqli_stmt_close($sentencia);
 
-				if ($sentencia = mysqli_prepare($enlace, $query)) {
-					mysqli_stmt_bind_param($sentencia, "sssissi",$nomape,$user,$pass,$tipo,$direccion,$saldo,$descuento);
-					mysqli_stmt_execute($sentencia);
-		            mysqli_stmt_close($sentencia);
-		            $_SESSION['result'] = true;
-					header('location: ../admin/usuariosA.php');
-				}
+                        if($existencia == 0){
+
+                            $query = "INSERT INTO usuarios (nom_ape,user,pass,cuenta,direccion,saldo,descuento) VALUES (?,?,?,?,?,?,?)";
+
+                            if ($sentencia = mysqli_prepare($enlace, $query)) {
+                                mysqli_stmt_bind_param($sentencia, "sssissi", $nomape, $user, $pass, $tipo, $direccion, $saldo, $descuento);
+                                mysqli_stmt_execute($sentencia);
+                                mysqli_stmt_close($sentencia);
+                                echo "<script>alert('Usuario creado exitosamente.'), window.location.href='../admin/usuariosA.php'</script>";
+                            }
+                        }elseif($existencia > 0){
+                            echo "<script>alert('Ya existe un registro con el usuario: ".$user."')</script>";
+                        }
+
+                    }
+
+                }else{
+                    echo "<script>alert('Por favor, rellene todos los campos')</script>";
+                }
 			}
 
 			require_once('../config/cerrar.php');
@@ -86,7 +107,7 @@
 	                           		<input class="form-control" type="text" name="direccion" placeholder="Direccion">
 	                           		<input class="form-control" type="text" name="saldo" placeholder="Saldo">
 	                           		<select name="descuento" class="form-control">
-	                           			<option value="">Descuento a aplicar</option>
+	                           			<option value="0">Descuento a aplicar</option>
 	                           			<option value="5">5%</option>
 	                           			<option value="10">10%</option>
 	                           			<option value="15">15%</option>

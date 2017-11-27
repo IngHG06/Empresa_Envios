@@ -28,23 +28,45 @@
 			require_once('../config/conexion.php');
 
 			if(isset($_POST['cod'])&&isset($_POST['tipo'])&&isset($_POST['color'])&&isset($_POST['matricula'])&&isset($_POST['nom_con'])&&isset($_POST['destino'])&&isset($_POST['fecha'])){
+                if($_POST['cod']!=""&&$_POST['tipo']!=""&&$_POST['color']!=""&&$_POST['matricula']!=""&&$_POST['nom_con']!=""&&$_POST['destino']!=""&&$_POST['fecha']!="") {
 
-				$cod = $_POST['cod'];
-				$tipo = $_POST['tipo'];
-				$color = $_POST['color'];
-				$matricula = $_POST['matricula'];
-				$nom_con = $_POST['nom_con'];
-				$destino = $_POST['destino'];
-				$fecha = $_POST['fecha'];
+                    $cod = $_POST['cod'];
+                    $tipo = $_POST['tipo'];
+                    $color = $_POST['color'];
+                    $matricula = $_POST['matricula'];
+                    $nom_con = $_POST['nom_con'];
+                    $destino = $_POST['destino'];
+                    $fecha = $_POST['fecha'];
 
-				$query = "INSERT INTO transportes (cod_transporte,tipo_transporte,color,matricula,nom_conductor,destino_asig,fecha_salida) VALUES (?,?,?,?,?,?,?)";
+                    $query = "SELECT COUNT(*) FROM transportes WHERE cod_transporte = ?";
 
-				if ($sentencia = mysqli_prepare($enlace, $query)) {
-					mysqli_stmt_bind_param($sentencia, "sssssss",$cod,$tipo,$color,$matricula,$nom_con,$destino,$fecha);
-					mysqli_stmt_execute($sentencia);
-		            mysqli_stmt_close($sentencia);
-					header('location: ../admin/transportesA.php');
-				}
+                    if ($sentencia = mysqli_prepare($enlace, $query)) {
+                        mysqli_stmt_bind_param($sentencia, "s", $cod);
+                        mysqli_stmt_execute($sentencia);
+                        mysqli_stmt_bind_result($sentencia, $existencia);
+                        while(mysqli_stmt_fetch($sentencia)){
+                            $existencia = $existencia;
+                        }
+                        mysqli_stmt_close($sentencia);
+
+                        if($existencia == 0){
+
+                            $query = "INSERT INTO transportes (cod_transporte,tipo_transporte,color,matricula,nom_conductor,destino_asig,fecha_salida) VALUES (?,?,?,?,?,?,?)";
+
+                            if ($sentencia = mysqli_prepare($enlace, $query)) {
+                                mysqli_stmt_bind_param($sentencia, "sssssss", $cod, $tipo, $color, $matricula, $nom_con, $destino, $fecha);
+                                mysqli_stmt_execute($sentencia);
+                                mysqli_stmt_close($sentencia);
+                                echo "<script>alert('Transporte creado exitosamente.'), window.location.href='../admin/transportesA.php'</script>";
+                            }
+                        }elseif($existencia > 0){
+                            echo "<script>alert('Ya existe un transporte con el código: ".$cod."')</script>";
+                        }
+                    }
+
+                }else{
+                    echo "<script>alert('Por favor, rellene todos los campos.')</script>";
+                }
 			}
 
 			require_once('../config/cerrar.php')

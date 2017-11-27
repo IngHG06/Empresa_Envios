@@ -90,10 +90,10 @@
 						mysqli_stmt_bind_param($sentencia, "ssssssss",$cod,$tipo,$color,$matricula,$nom_con,$destino,$fecha,$cod);
 						mysqli_stmt_execute($sentencia);
 			            mysqli_stmt_close($sentencia);
-						header('location: ../admin/transportesA.php');
+                        echo "<script>alert('Transporte modificado exitosamente.'), window.location.href='../admin/transportesA.php'</script>";
 					}
 				}else{
-					header('location: ../admin/transportesA.php');
+                    echo "<script>alert('Por favor, rellene todos los campos'), window.location.href='../formularios/modificarT.php?cod=".$_POST['cod']."'</script>";
 				}
 			}
 

@@ -17,7 +17,7 @@
 				mysqli_stmt_bind_param($sentencia, "i",$id);
 				mysqli_stmt_execute($sentencia);
 	            mysqli_stmt_close($sentencia);
-				header('location: ../admin/usuariosA.php');
+                echo "<script>alert('Usuario eliminado exitosamente.'), window.location.href='../admin/usuariosA.php'</script>";
 			}
 		}
 

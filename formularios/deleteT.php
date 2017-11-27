@@ -17,7 +17,7 @@
 			mysqli_stmt_bind_param($sentencia, "s",$cod);
 			mysqli_stmt_execute($sentencia);
             mysqli_stmt_close($sentencia);
-			header('location: ../admin/transportesA.php');
+            echo "<script>alert('Transporte eliminado exitosamente.'), window.location.href='../admin/transportesA.php'</script>";
 		}
 	}
 
